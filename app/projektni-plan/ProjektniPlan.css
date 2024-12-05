@@ -1,0 +1,250 @@
+.project-plan-page-section {
+  max-width: 100%;
+}
+
+.project-plan-page-inner-section {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.project-plan-page-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.heading-img {
+  padding-top: 10rem;
+}
+
+.project-plan-heading-description {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 1rem 0;
+}
+
+.project-plan-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+
+  margin: 10rem 0;
+
+  position: relative;
+}
+
+.year-2022-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -100%);
+  padding: 2rem 1.5rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.year-2023-circle {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  transform: translate(-50%, -100%);
+  padding: 2rem 1.5rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.year-2023-circle h1,
+.year-2022-circle h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.project-plan-container {
+  flex: 1;
+}
+
+.project-plan-inner-container {
+  border-left: 1px solid var(--color-secondary);
+  padding-left: 3rem;
+  padding-bottom: 8rem;
+  padding-top: 1rem;
+}
+
+.project-plan-box {
+  background-color: #f7f2ec;
+  border: 4px solid #f7f2ec;
+  padding: 1rem;
+  margin: 3rem 0;
+
+  position: relative;
+}
+
+.project-plan-box::before {
+  content: "";
+  clear: both;
+  width: 4px;
+  height: 4px;
+  border: 4px solid var(--color-secondary);
+  border-radius: 50%;
+  background-color: #fff;
+
+  position: absolute;
+  top: 14%;
+  left: -4rem;
+  transform: translateX(50%);
+}
+
+.box-color {
+  margin: -2.3rem 0 0 3rem;
+  border-color: #224265;
+  background-color: #182d4c;
+}
+.box-color .pointer {
+  border-right: 1rem solid #224265;
+}
+
+.box-color h4,
+.box-color h2,
+.box-color p {
+  color: #fff;
+}
+
+.pointer {
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-right: 1rem solid #f7f2ec;
+
+  border-bottom: 1rem solid transparent;
+  position: absolute;
+  top: 10%;
+  left: -1rem;
+}
+
+.box-subtitle {
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.box-title {
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+ul.box-list {
+  padding: 2rem 0 2rem 1rem;
+}
+
+.project-plan-contact-container {
+  flex: 1;
+}
+
+.project-plan-contact-inner-container {
+  margin: 3rem 0;
+}
+
+.project-plan-contact-details:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.project-plan-contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+
+  padding: 1rem 0;
+
+  border-bottom: 1px solid #ccc;
+}
+
+.project-plan-contact-details-icon {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.project-plan-contact-detail h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.apartments-primary-heading {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+
+  padding-bottom: 2.5rem;
+}
+
+.apartments-background {
+  background-color: var(--color-secondary);
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+@media screen and (max-width: 80em) {
+  .project-plan-section {
+    margin: 5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 68em) {
+  .heading-img {
+    display: none;
+  }
+
+  .apartments-background {
+    position: initial;
+  }
+}
+
+@media screen and (max-width: 58.625em) {
+  .project-plan-section {
+    flex-direction: column;
+  }
+
+  .project-plan-section {
+    margin: 5rem 1rem 5rem 2rem;
+  }
+  .year-2023-circle {
+    position: absolute;
+    left: 0;
+    bottom: 32%;
+  }
+}
+
+@media screen and (max-width: 51.25em) {
+  .year-2023-circle {
+    position: absolute;
+    left: 0;
+    bottom: 35%;
+  }
+}
+
+@media screen and (max-width: 39.5em) {
+  .year-2023-circle {
+    position: absolute;
+    left: 0;
+    bottom: 38%;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .year-2023-circle {
+    position: absolute;
+    left: 0;
+    bottom: 42%;
+  }
+}

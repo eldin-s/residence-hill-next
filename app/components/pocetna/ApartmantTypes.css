@@ -1,0 +1,89 @@
+.apartmants_types-section {
+  width: 100%;
+  position: relative;
+}
+
+.slides-img {
+  position: absolute;
+  max-width: 55%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slides-img img {
+  max-width: 100%;
+}
+
+.type-inner-columns {
+  max-width: 75rem;
+  margin: 4rem auto;
+  padding: 8rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(247, 242, 236, 1);
+}
+
+.type-inner-column-60 {
+  width: 60%;
+}
+
+.type-inner-column-40 {
+  width: 40%;
+  padding: 5rem 1.5rem;
+}
+
+.type-heading {
+  padding-bottom: 2rem;
+}
+
+.type-btn {
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+
+  transition: transform 0.3s ease;
+
+  cursor: pointer;
+}
+
+.type-btn:hover {
+  transform: translateY(-4px);
+}
+
+.swiper-button-next {
+  top: 103% !important;
+  right: 2px !important;
+}
+
+.swiper-button-prev {
+  top: 103% !important;
+  left: 95% !important;
+}
+
+.swiper,
+.swiper-container {
+  overflow: visible !important;
+}
+
+@media screen and (max-width: 62em) {
+  .slides-img {
+    display: none;
+  }
+
+  .type-inner-column-60 {
+    display: none;
+  }
+
+  .type-inner-column-40 {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+}

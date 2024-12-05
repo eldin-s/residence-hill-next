@@ -1,42 +1,228 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #be8e57;
+  --color-secondary: #182d4c;
+  --swiper-theme-color: #be8e57 !important;
+  --swiper-navigation-size: 1.2rem !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font-roboto-sans);
 }
 
-html,
-body {
-  max-width: 100vw;
+html {
   overflow-x: hidden;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-roboto-sans);
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h2,
+h1 {
+  font-family: var(--font-dmserif-sans);
+}
+
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: var(--font-roboto-sans);
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.span-heading {
+  color: var(--color-primary);
+  font-style: italic;
+  font-family: var(--font-dmserif-sans);
+}
+
+.subtitle {
+  color: var(--color-primary);
+  font-size: 0.97rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 5rem 3rem;
+}
+
+.subtitle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5rem;
+
+  width: 4rem;
+  height: 1px;
+  background-color: var(--color-primary);
+}
+
+.heading-secondary {
+  color: var(--color-secondary);
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.p-description {
+  color: #181818;
+  line-height: 1.8;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.apartments-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem 0 4rem;
+
+  background-color: var(--color-primary);
+}
+
+.banner-img {
+  max-width: 23rem;
+  max-height: 12.85rem;
+}
+
+.banner-img img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.banner-heading {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.banner-btn {
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner-btn:hover {
+  transform: translateY(-5px);
+}
+
+.btn-icon {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-contact {
+  text-align: left;
+}
+
+.btn-contact h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.btn-contact h1 {
+  font-weight: 500;
+}
+
+.notfound {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  background-color: #181818;
+  color: #fff;
+}
+
+.notfound a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #6b96d6;
+}
+
+.card-apartment-info {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.card-details-container:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  color: var(--color-primary);
+  font-size: 15px;
+}
+
+.card-detail-description {
+  padding-left: 0.8rem;
+}
+
+.heading-container {
+  padding-top: 10rem;
+  width: 50%;
+}
+
+.studio-page-heading {
+  font-size: 3.6rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.studio-page-subtitle {
+  font-size: 0.97rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 5rem 3rem;
+}
+
+.studio-page-subtitle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5rem;
+
+  width: 4rem;
+  height: 1px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 68em) {
+  .banner-img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }

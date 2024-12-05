@@ -1,0 +1,323 @@
+.residence-map-section {
+  width: 100%;
+
+  margin: 3rem 0;
+}
+
+.residence-map-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.residence-map-container-inner {
+  background-color: #f7f2ec;
+  margin: 1rem;
+}
+
+.residence-map-heading {
+  color: var(--color-secondary);
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 2.5rem 1.5rem;
+}
+
+.residence-map-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+
+  max-width: 100%;
+}
+
+.residence-map-column-img {
+  max-width: 55rem;
+  margin-left: -5rem;
+  position: relative;
+}
+
+.residence-map-column-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.residence-map-colum-tabs {
+  flex: 1;
+  padding: 0 3rem 2rem;
+  width: 100%;
+}
+
+.tabs-single-column {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.tabs-single-column:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.tabs-tab-heading {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  white-space: nowrap;
+
+  padding: 2rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  transition: color 0.3s ease;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tabs-tab-heading:hover {
+  color: var(--color-primary);
+}
+
+.tabs-tab-heading span {
+  padding-right: 0.8rem;
+}
+
+.tabs-tab-description {
+  color: #252525;
+  width: 80%;
+  padding-left: 2.5rem;
+  padding-bottom: 2rem;
+
+  font-size: 0.95rem;
+
+  line-height: 1.45;
+
+  animation: fadeInTop 0.2s ease-in;
+  transform-origin: top;
+}
+
+.map-dot {
+  background-color: var(--color-primary);
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  animation: fadeOut 1.5s ease-in infinite;
+  transition: color 0.3s ease-in-out, background-color 0.4s ease-in-out;
+
+  z-index: 1;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dot1 {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+}
+.dot1::after {
+  content: "Zajednički Lobi";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+
+  transition: all 0.3s ease-in-out;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-primary);
+  opacity: 0;
+}
+
+.dot2 {
+  position: absolute;
+  top: 42%;
+  left: 55%;
+}
+.dot2::after {
+  content: "Restoran";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+
+  transition: all 0.3s ease-in-out;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-primary);
+  opacity: 0;
+}
+
+.dot3 {
+  position: absolute;
+  top: 23%;
+  left: 39%;
+}
+.dot3::after {
+  content: "Fintes Centar";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+
+  transition: all 0.3s ease-in-out;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-primary);
+  opacity: 0;
+}
+
+.dot4 {
+  position: absolute;
+  top: 30%;
+  left: 23%;
+}
+.dot4::after {
+  content: "Rekreativni Centar";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+
+  transition: all 0.3s ease-in-out;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-primary);
+  opacity: 0;
+}
+
+.dot5 {
+  position: absolute;
+  top: 53%;
+  left: 90%;
+}
+.dot5::after {
+  content: "Spa Centar";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+
+  transition: all 0.3s ease-in-out;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-primary);
+  opacity: 0;
+}
+
+.dot-active {
+  background-color: #fff;
+  color: var(--color-primary);
+  animation: none;
+}
+
+@media (hover: hover) {
+  .dot1:hover.dot1::after,
+  .dot2:hover.dot2::after,
+  .dot3:hover.dot3::after,
+  .dot4:hover.dot4::after,
+  .dot5:hover.dot5::after {
+    opacity: 1;
+  }
+}
+
+span.hide-desktop {
+  display: none;
+}
+
+@keyframes fadeInTop {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(100%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(190, 142, 87, 0);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 0px rgba(190, 142, 87, 0.6);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 10px rgba(190, 142, 87, 0);
+  }
+}
+
+@media screen and (max-width: 80em) {
+  .residence-map-column-img {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .residence-map-column {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .residence-map-column-img {
+    margin: 0 auto;
+  }
+
+  .residence-map-column-img img {
+    padding: 1rem;
+  }
+
+  span.hide-mobile {
+    display: none;
+  }
+  span.hide-desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 39em) {
+  .map-dot {
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+  }
+}

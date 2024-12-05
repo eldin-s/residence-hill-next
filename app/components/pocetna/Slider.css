@@ -1,0 +1,139 @@
+.header-slider {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+
+.hero-slider-section {
+  width: 100%;
+  height: 900px;
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.active {
+  transition: opacity 0.5s ease-in-out;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.slider-content {
+  width: 71.25rem;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.active-content {
+  transition: opacity 1.2s 0.5s ease-in-out;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.slider-heading {
+  font-size: 5.625em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.slider-heading span {
+  font-family: var(--font-dmserif-sans);
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+.slider-buttons {
+  padding-top: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rotate45 {
+  transform: rotate(-45deg);
+}
+
+.arrows {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.slider-arrow-left {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.slider-arrow-right {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.slider-arrow-right:hover,
+.slider-arrow-left:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 75em) {
+  .slider-content {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 56em) {
+  .slider-heading {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  .hero-slider-section {
+    max-height: 700px;
+    max-width: 75rem;
+  }
+
+  .header-slider {
+    max-width: 75rem;
+    max-height: 700px;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .slider-content {
+    padding: 0 2rem;
+  }
+
+  .slider-heading {
+    font-size: 2.3rem;
+  }
+
+  .slider-buttons {
+    flex-direction: column;
+    max-width: 80%;
+  }
+
+  .slider-btn-info h1 {
+    font-size: 1rem;
+  }
+}

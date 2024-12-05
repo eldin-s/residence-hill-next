@@ -1,0 +1,157 @@
+.studio-heading {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.studio-heading-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10rem 1rem;
+}
+
+.studio-page-subtitle {
+  font-size: 0.97rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 5rem 3rem;
+}
+
+.studio-page-subtitle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5rem;
+
+  width: 4rem;
+  height: 1px;
+  background-color: #fff;
+}
+
+.studio-page-heading {
+  font-size: 3.6rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.studio-page-description {
+  max-width: 50%;
+  line-height: 1.6;
+}
+
+.studio-section {
+  width: 100%;
+  position: relative;
+}
+
+.studio-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.studio-columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(247, 242, 236, 1);
+  margin-top: -6rem;
+
+  padding: 10rem 0;
+}
+
+.studio-stan-img-desktop {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  max-width: 45%;
+  z-index: 1;
+}
+
+.studio-stan-img-mobile {
+  display: none;
+}
+
+.studio-column-60 {
+  width: 40%;
+}
+
+.studio-inner-heading {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+  padding-bottom: 2rem;
+}
+
+.studio-card-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.studio-card-details-container:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.studio-total-square {
+  padding: 2rem 0;
+}
+
+.studio-contact-btn {
+  outline: 0;
+  border: 0;
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: 3px;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
+
+.studio-banner {
+  margin: 0 0 8rem;
+}
+
+@media screen and (max-width: 59em) {
+  .studio-columns {
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+    margin: -6rem 2rem 0;
+  }
+
+  .studio-column-40 {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .studio-column-60 {
+    width: 100%;
+  }
+
+  .studio-stan-img-desktop {
+    display: none;
+  }
+  .studio-stan-img-mobile {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .studio-page-description {
+    max-width: 100%;
+  }
+}

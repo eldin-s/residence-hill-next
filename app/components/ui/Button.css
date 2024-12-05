@@ -1,0 +1,49 @@
+.btn-border,
+.btn-solid {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+
+  transition: transform 0.2s ease-in;
+}
+
+.btn-solid {
+  background-color: var(--color-primary);
+}
+
+.btn-border {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+.slider-btn-icon img {
+  width: 2rem;
+}
+
+.slider-btn-info {
+  text-align: left;
+}
+
+.slider-btn-info p {
+  text-transform: uppercase;
+}
+.slider-btn-info h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn-border:hover,
+.btn-solid:hover {
+  transform: translateY(-5px);
+}
+
+.slider-btn-icon {
+  font-size: 2rem;
+}

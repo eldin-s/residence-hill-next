@@ -1,0 +1,255 @@
+.calculator-heading {
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calculator-heading-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #fff;
+  padding: 8rem 1rem;
+}
+
+.calculator-container {
+  width: 100%;
+  background-color: #f7f2ec;
+}
+
+.calculator-column {
+  max-width: 35rem;
+  margin: 0 auto;
+
+  padding: 8rem 1rem;
+}
+
+.calculator-title {
+  font-weight: 400;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.calculator-inner-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.calculator-garage,
+label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.calculator-inner-column select {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 1rem;
+  min-width: 15rem;
+}
+
+.calculator-inner-column input[type='range'] {
+  min-width: 15rem;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #000000;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #a37a4b;
+}
+input[type='range']::-webkit-slider-thumb {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  border-radius: 50px;
+  background: #be8e57;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12px;
+}
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #fff;
+}
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 1px #000000;
+  background: #e3aa68;
+  border-radius: 5px;
+  border: 1px solid #a37a4b;
+}
+input[type='range']::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #182d4c;
+  border: 1px solid #182d4c;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: #be8e57;
+  cursor: pointer;
+}
+input[type='range']::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+  background: #e3aa68;
+  border: 1px solid #a37a4b;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px #000000;
+}
+input[type='range']::-ms-fill-upper {
+  background: #e3aa68;
+  border: 1px solid #a37a4b;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px #000000;
+}
+input[type='range']::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #182d4c;
+  border: 1px solid #182d4c;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: 50px;
+  background: #be8e57;
+  cursor: pointer;
+}
+input[type='range']:focus::-ms-fill-lower {
+  background: #e3aa68;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: #e3aa68;
+}
+
+.calculator-garage-btn {
+  width: 4.8rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.calculator-garage-btn-circle {
+  width: 2rem;
+  height: 2rem;
+  background-color: #d6b690;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: ease-in 0.2s linear, transform 0.2s ease-in;
+}
+
+.garage-btn-active {
+  background-color: var(--color-primary);
+  transform: translateX(100%);
+}
+
+.calculator-total-price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  color: #fff;
+}
+
+.total-price-text {
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  text-align: right;
+}
+
+.calculator-price {
+  background-color: #d1a978;
+  padding: 0.85rem 2rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  white-space: nowrap;
+}
+
+.calculator-reservations-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.calculator-reservation-column {
+  flex: 1;
+  padding: 5rem 4rem 0 4rem;
+}
+
+.reservation-heading {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  padding-bottom: 2rem;
+}
+
+.reservation-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.calculator-reservation-img {
+  flex: 1;
+  margin-top: -5rem;
+}
+
+@media screen and (max-width: 56em) {
+  .calculator-reservation-img {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 47em) {
+  .calculator-reservations-container {
+    flex-direction: column;
+  }
+
+  .calculator-reservation-column {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 34em) {
+  .calculator-inner-column {
+    flex-direction: column;
+  }
+}
